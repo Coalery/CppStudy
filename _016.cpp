@@ -1,15 +1,14 @@
 #include "_016.h"
 #include <iostream>
 
-using namespace kang;
+using namespace kim;
 using namespace std;
 
-void kang::Display() {
-    cout << kang::count << endl;
-}
+void kim::Hello() {}
 
 int main() {
-    kang::count = 5;
-    kang::Display();
+    kim::Hello();
+    kim::Display();
+    cout << kim::count << endl;
     return 0;
 }
