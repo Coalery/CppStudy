@@ -84,3 +84,6 @@ friend 키워드에 대해 연습합니다.
 
 ## 028
 연관 컨테이너(Associate Container)에 대해 연습합니다.
+
+## 029
+컨테이너 어댑터(Container Adapter)에 대해 연습합니다.
