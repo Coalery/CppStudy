@@ -78,3 +78,6 @@ friend 키워드에 대해 연습합니다.
 
 ## 026
 반복자(Iterator)에 대해 연습합니다.
+
+## 027
+시퀀스 컨테이너(Sequence Container)에 대해 연습합니다.
