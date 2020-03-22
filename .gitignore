@@ -44,3 +44,4 @@
 *.sln
 *.vcxproj
 *.vcxproj.filters
+Debug/
