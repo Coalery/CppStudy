@@ -1,0 +1,66 @@
+﻿  main.cpp
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(183,16): error C2041: '8' 숫자가 잘못되었습니다(기본 '8').
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(212,16): error C2041: '9' 숫자가 잘못되었습니다(기본 '8').
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(241,17): warning C4566: 유니버설 문자 이름 '\uFFFD'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(243,17): warning C4566: 유니버설 문자 이름 '\uFFFD'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(351,13): error C2011: 'Book': 'struct' 형식 재정의
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(248): message : 'Book' 선언을 참조하십시오.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(369,6): error C2027: 정의되지 않은 형식 'Book'을(를) 사용했습니다.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(248): message : 'Book' 선언을 참조하십시오.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(369,33): error C2027: 정의되지 않은 형식 'Book'을(를) 사용했습니다.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(248): message : 'Book' 선언을 참조하십시오.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(371,32): error C2027: 정의되지 않은 형식 'Book'을(를) 사용했습니다.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(248): message : 'Book' 선언을 참조하십시오.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(372,31): error C2027: 정의되지 않은 형식 'Book'을(를) 사용했습니다.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(248): message : 'Book' 선언을 참조하십시오.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(383,17): error C2079: 'book'은(는) 정의되지 않은 struct 'Book'을(를) 사용합니다.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(383,43): error C2440: '초기화 중': 'initializer list'에서 'int'(으)로 변환할 수 없습니다.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(383,17): message : 이니셜라이저에 요소가 너무 많습니다.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(384,19): error C2664: 'void printBook(const Book)': 인수 1을(를) 'int'에서 'const Book'(으)로 변환할 수 없습니다.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(384,19): message : 정의되지 않은 형식 'Book'을(를) 사용했습니다.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(248,8): message : 'Book' 선언을 참조하십시오.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(369,6): message : 'printBook' 선언을 참조하십시오.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(450,16): error C2041: '8' 숫자가 잘못되었습니다(기본 '8').
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(485,16): error C2041: '9' 숫자가 잘못되었습니다(기본 '8').
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(486,13): error C2011: 'Point': 'class' 형식 재정의
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(451): message : 'Point' 선언을 참조하십시오.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(503,16): error C2079: 'p1'은(는) 정의되지 않은 class 'Point'을(를) 사용합니다.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(503,21): error C2027: 정의되지 않은 형식 'Point'을(를) 사용했습니다.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(451): message : 'Point' 선언을 참조하십시오.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(503,16): error C2064: 항은 2개의 인수를 받아들이는 함수로 계산되지 않습니다.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(504,16): error C2079: 'p2'은(는) 정의되지 않은 class 'Point'을(를) 사용합니다.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(504,21): error C2027: 정의되지 않은 형식 'Point'을(를) 사용했습니다.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(451): message : 'Point' 선언을 참조하십시오.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(504,16): error C2064: 항은 2개의 인수를 받아들이는 함수로 계산되지 않습니다.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(505,16): error C2079: 'p3'은(는) 정의되지 않은 class 'Point'을(를) 사용합니다.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(525,14): error C2027: 정의되지 않은 형식 'Point'을(를) 사용했습니다.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(510): message : 'Point' 선언을 참조하십시오.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(525,42): error C2270: '*': 비멤버 함수에 한정자를 사용할 수 없습니다.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(525,42): error C2027: 정의되지 않은 형식 'Point'을(를) 사용했습니다.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(510): message : 'Point' 선언을 참조하십시오.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(525,23): error C2027: 정의되지 않은 형식 'Point'을(를) 사용했습니다.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(510): message : 'Point' 선언을 참조하십시오.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(525,57): error C2355: 'this': 비정적 멤버 함수 또는 비정적 데이터 멤버 이니셜라이저 안에서만 참조할 수 있습니다.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(525,72): error C2355: 'this': 비정적 멤버 함수 또는 비정적 데이터 멤버 이니셜라이저 안에서만 참조할 수 있습니다.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(525,56): error C2027: 정의되지 않은 형식 'Point'을(를) 사용했습니다.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(510): message : 'Point' 선언을 참조하십시오.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(525,51): error C2064: 항은 1개의 인수를 받아들이는 함수로 계산되지 않습니다.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(526,50): error C2027: 정의되지 않은 형식 'Point'을(를) 사용했습니다.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(510): message : 'Point' 선언을 참조하십시오.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(526,7): error C2027: 정의되지 않은 형식 'Point'을(를) 사용했습니다.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(510): message : 'Point' 선언을 참조하십시오.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(526,71): error C2027: 정의되지 않은 형식 'Point'을(를) 사용했습니다.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(510): message : 'Point' 선언을 참조하십시오.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(526,87): error C2027: 정의되지 않은 형식 'Point'을(를) 사용했습니다.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(510): message : 'Point' 선언을 참조하십시오.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(526,64): error C2027: 정의되지 않은 형식 'Point'을(를) 사용했습니다.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(510): message : 'Point' 선언을 참조하십시오.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(526,59): error C2064: 항은 1개의 인수를 받아들이는 함수로 계산되지 않습니다.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(529,15): error C2079: 'p'은(는) 정의되지 않은 class 'Point'을(를) 사용합니다.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(529,20): error C2027: 정의되지 않은 형식 'Point'을(를) 사용했습니다.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(510): message : 'Point' 선언을 참조하십시오.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(529,15): error C2064: 항은 2개의 인수를 받아들이는 함수로 계산되지 않습니다.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(531,16): error C2079: 'p2'은(는) 정의되지 않은 class 'Point'을(를) 사용합니다.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(534,16): error C2079: 'p3'은(는) 정의되지 않은 class 'Point'을(를) 사용합니다.
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(792,16): error C2041: '8' 숫자가 잘못되었습니다(기본 '8').
+D:\File\HW\Files\Programming\CppStudy\CppStudy\Defaults\main.cpp(822,16): error C2041: '9' 숫자가 잘못되었습니다(기본 '8').
