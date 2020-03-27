@@ -135,7 +135,7 @@ int _006() {
 #pragma endregion
 #pragma region 007
 int _007() {
-    int i, num;
+    int i = 0, num;
     cin >> num;
 
     cout << "while" << endl;
@@ -180,7 +180,7 @@ int _007() {
     return 0;
 }
 #pragma endregion
-#pragma region 008
+#pragma region Study008
 int _008() {
     int sum = 0;
     int arr[3] = { 11, 51, 17 };
@@ -209,7 +209,7 @@ int _008() {
     return 0;
 }
 #pragma endregion
-#pragma region 009
+#pragma region Study009
 int _009() {
     int* ptr = new int;
     *ptr = 50;
@@ -238,46 +238,46 @@ int _010() {
     cout << str.find("r") << endl;
 
     if (str.find("Pro", 5) != string::npos)
-        cout << "臾몄���댁�� 李얠���듬����.";
+        cout << "Find 'Pro'.";
     else
-        cout << "臾몄���댁�� 李얠� 紐삵���듬����.";
+        cout << "Can't find 'Pro'.";
     return 0;
 }
 #pragma endregion
 #pragma region 011
-struct Book {
+struct Book11 {
     string title;
     string author;
     int price;
 };
 
-union UnionTest {
+union UnionTest11 {
     short a;
     int b;
     long c;
 };
 
-enum EnumTest {
+enum EnumTest11 {
     A = 10,
     B = 20,
     C = 30
 };
 
 int _011() {
-    Book book1 = { "C++ Study", "Coalery", 10000 };
+    Book11 book1 = { "C++ Study", "Coalery", 10000 };
     cout << book1.title << endl;
     cout << book1.author << endl;
     cout << book1.price << endl;
 
-    UnionTest unionTest;
+    UnionTest11 unionTest;
     unionTest.a = 10;
 
     cout << unionTest.a << endl;
     cout << unionTest.b << endl;
     cout << unionTest.c << endl;
 
-    EnumTest enumTest;
-    enumTest = EnumTest::A;
+    EnumTest11 enumTest;
+    enumTest = EnumTest11::A;
     cout << enumTest << endl;
     return 0;
 }
@@ -297,17 +297,17 @@ int SmallNum(int num1, int num2) {
 }
 #pragma endregion
 #pragma region 013
-typedef double (*CalcType)(double, double);
+typedef double (*CalcType13)(double, double);
 
 double add(double, double);
 double subtract(double, double);
 double multiply(double, double);
 double divide(double, double);
 
-double calculate(double, double, CalcType);
+double calculate13(double, double, CalcType13);
 
 int _013() {
-    CalcType calc = nullptr;
+    CalcType13 calc = nullptr;
 
     char oper;
     int a, b;
@@ -332,9 +332,10 @@ int _013() {
         break;
     }
     if (calc != nullptr)
-        cout << "연산의 결과! : " << calculate(a, b, calc) << endl;
+        cout << "연산의 결과! : " << calculate13(a, b, calc) << endl;
     else
         cout << "연산자가 존재하지 않아요!" << endl;
+    return 0;
 }
 
 double add(double a, double b) { return a + b; }
@@ -345,28 +346,28 @@ double divide(double a, double b) {
     return a / b;
 }
 
-double calculate(double a, double b, CalcType type) { return type(a, b); }
+double calculate13(double a, double b, CalcType13 type) { return type(a, b); }
 #pragma endregion
 #pragma region 014
-struct Book {
+struct Book14 {
     string title;
     string author;
     int price;
 };
 
-void Swap(int* a, int* b) {
+void Swap14(int* a, int* b) {
     int tmp = *a;
     *a = *b;
     *b = tmp;
 }
 
-void Swap(int& a, int& b) {
+void Swap14(int& a, int& b) {
     int tmp = a;
     a = b;
     b = tmp;
 }
 
-void printBook(const Book book) {
+void printBook14(const Book14& book) {
     cout << "Title : " << book.title << endl;
     cout << "Author : " << book.author << endl;
     cout << "Price : " << book.price << endl;
@@ -375,18 +376,18 @@ void printBook(const Book book) {
 int _014() {
     int a = 2, b = 4;
     cout << "a : " << a << ", b : " << b << endl;
-    Swap(&a, &b);
+    Swap14(&a, &b);
     cout << "a : " << a << ", b : " << b << endl;
-    Swap(a, b);
+    Swap14(a, b);
     cout << "a : " << a << ", b : " << b << endl;
 
-    Book book = { "C++", "Coalery", 10000 };
-    printBook(book);
+    Book14 book = { "C++", "Coalery", 10000 };
+    printBook14(book);
     return 0;
 }
 #pragma endregion
 #pragma region 015
-int hi(int a, int b, char c = 'a', int d = 7) {
+void hi(int a, int b, char c = 'a', int d = 7) {
     cout << "a : " << a << endl;
     cout << "b : " << b << endl;
     cout << "c : " << c << endl;
@@ -417,6 +418,11 @@ private:
     int age;
 
 public:
+    Cat17(const string& name, int age) {
+        this->name = name;
+        this->age = age;
+    }
+
     string getName() { return name; }
     int getAge() { return age; }
 
@@ -432,14 +438,10 @@ public:
 };
 
 int _017() {
-    Cat17 cat1;
-    cat1.setName("cat1");
-    cat1.setAge(5);
+    Cat17 cat1("cat1", 5);
     cat1.printInfo();
 
-    Cat17 cat2;
-    cat2.setName("cat2");
-    cat2.setAge(7);
+    Cat17 cat2("cat2", 7);
     cat2.printInfo();
 
     cat1.youngerCat(cat2).printInfo();
@@ -447,8 +449,8 @@ int _017() {
     return 0;
 }
 #pragma endregion
-#pragma region 018
-class Point {
+#pragma region Study018
+class Point18 {
 private:
     int x;
     int y;
@@ -457,81 +459,82 @@ public:
     //     this->x = 10;
     //     this->y = 20;
     // }
-    Point(int x = 10, int y = 20) {
+    Point18(int x = 10, int y = 20) {
         this->x = x;
         this->y = y;
     }
     void printInfo() { cout << "Point{\"x\":\"" << x << "\",\"y\":\"" << y << "\"}" << endl; }
-    ~Point() { cout << "Destructor Called." << endl; }
+    ~Point18() { cout << "Destructor Called." << endl; }
 };
 
 int _018() {
-    Point p = Point();
+    Point18 p = Point18();
     p.printInfo();
 
-    Point p2 = Point(2, 3);
+    Point18 p2 = Point18(2, 3);
     p2.printInfo();
 
-    Point p3 = Point(p2);
+    Point18 p3 = Point18(p2);
     p2.printInfo();
 
-    Point* p4 = new Point(1, 3);
+    Point18* p4 = new Point18(1, 3);
     p4->printInfo();
     delete p4;
 
     return 0;
 }
 #pragma endregion
-#pragma region 019
-class Point {
+#pragma region Study019
+class Point19 {
 private:
     int x;
     int y;
 public:
-    Point(int x = 0, int y = 0) {
+    Point19(int x = 0, int y = 0) {
         this->x = x;
         this->y = y;
     }
     void printInfo() { cout << "Point{\"x\":\"" << x << "\",\"y\":\"" << y << "\"}" << endl; }
 
-    Point operator-(const Point& point1) {
-        return Point(this->x - point1.x, this->y - point1.y);
+    Point19 operator-(const Point19& point1) {
+        return Point19(this->x - point1.x, this->y - point1.y);
     }
 };
 
 int _019() {
-    Point p1 = Point(3, 5);
-    Point p2 = Point(1, 2);
-    Point p3 = p1 - p2;
+    Point19 p1 = Point19(3, 5);
+    Point19 p2 = Point19(1, 2);
+    Point19 p3 = p1 - p2;
     p3.printInfo();
+    return 0;
 }
 #pragma endregion
 #pragma region 020
-class Point {
+class Point20 {
 private:
-    int x;
-    int y;
+    double x;
+    double y;
 public:
-    Point(int x = 0, int y = 0) {
+    Point20(double x = 0.0, double y = 0.0) {
         this->x = x;
         this->y = y;
     }
     void printInfo() { cout << "Point{\"x\":\"" << x << "\",\"y\":\"" << y << "\"}" << endl; }
-    Point operator-(const Point& point) const;
-    Point operator*(double mul) const;
-    friend Point operator*(double mul, const Point& origin);
+    Point20 operator-(const Point20& point) const;
+    Point20 operator*(double mul) const;
+    friend Point20 operator*(double mul, const Point20& origin);
 };
 
-Point Point::operator*(double mul) const { return Point(this->x * mul, this->y * mul); }
-Point operator*(double mul, const Point& origin) { return Point(origin.x * mul, origin.y * mul); }
+Point20 Point20::operator*(double mul) const { return Point20(this->x * mul, this->y * mul); }
+Point20 operator*(double mul, const Point20& origin) { return Point20(origin.x * mul, origin.y * mul); }
 
 int _020() {
-    Point p = Point(3, 3);
+    Point20 p = Point20(3, 3);
 
-    Point p2 = p * 3;
+    Point20 p2 = p * 3;
     p2.printInfo();
 
-    Point p3 = 4 * p;
+    Point20 p3 = 4 * p;
     p3.printInfo();
     return 0;
 }
@@ -577,48 +580,48 @@ Student::Student(const string& name, int age, int sid) : Person21(name, age) { t
 void Student::printInfo() { cout << "name : " << name << ", age : " << age << ", sid : " << sid << endl; }
 #pragma endregion
 #pragma region 022
-class Animal {
+class Animal22 {
 private:
     string name;
     int age;
 public:
-    Animal(const string& name, int age);
+    Animal22(const string& name, int age);
     void printInfo();
     virtual void cry() = 0;
-    virtual ~Animal() {}
+    virtual ~Animal22() {}
 };
 
-class Dog : public Animal {
+class Dog22 : public Animal22 {
 public:
-    Dog(const string& name, int age) : Animal(name, age) {}
+    Dog22(const string& name, int age) : Animal22(name, age) {}
     virtual void cry();
 };
 
-class Cat : public Animal {
+class Cat22 : public Animal22 {
 public:
-    Cat(const string& name, int age) : Animal(name, age) {}
+    Cat22(const string& name, int age) : Animal22(name, age) {}
     virtual void cry();
 };
 
 int _022() {
-    Dog dog("d1", 5);
+    Dog22 dog("d1", 5);
     dog.cry();
     dog.printInfo();
 
-    Cat cat("c1", 3);
+    Cat22 cat("c1", 3);
     cat.cry();
     cat.printInfo();
 
     return 0;
 }
 
-Animal::Animal(const string& name, int age) {
+Animal22::Animal22(const string& name, int age) {
     this->name = name;
     this->age = age;
 }
-void Animal::printInfo() { cout << "name : " << name << ", age : " << age << endl; }
-void Dog::cry() { cout << "멍!" << endl; }
-void Cat::cry() { cout << "냥!" << endl; }
+void Animal22::printInfo() { cout << "name : " << name << ", age : " << age << endl; }
+void Dog22::cry() { cout << "멍!" << endl; }
+void Cat22::cry() { cout << "냥!" << endl; }
 #pragma endregion
 #pragma region 023
 template <typename T> void Swap(T& a, T& b) {
@@ -653,19 +656,19 @@ int _023() {
 }
 #pragma endregion
 #pragma region 024
-template <typename T> class Data {
+template <typename T> class Data24 {
 private:
     T data;
 public:
-    Data(T data);
+    Data24(T data);
     T getData();
 };
 
-template <> class Data<double> {
+template <> class Data24<double> {
 private:
     double data;
 public:
-    Data(double data) { this->data = data; }
+    Data24(double data) { this->data = data; }
     double getData() {
         cout << "Double!" << endl;
         return this->data;
@@ -673,26 +676,26 @@ public:
 };
 
 int _024() {
-    Data<string> strData("Hello World!");
-    Data<int> intData(5);
-    Data<double> douData(10.0);
+    Data24<string> strData("Hello World!");
+    Data24<int> intData(5);
+    Data24<double> douData(10.0);
     cout << strData.getData() << endl;
     cout << intData.getData() << endl;
     cout << douData.getData() << endl;
     return 0;
 }
 
-template <typename T> Data<T>::Data(T data) { this->data = data; }
-template <typename T> T Data<T>::getData() { return this->data; }
+template <typename T> Data24<T>::Data24(T data) { this->data = data; }
+template <typename T> T Data24<T>::getData() { return this->data; }
 #pragma endregion
 #pragma region 025
-class Person {
+class Person25 {
 private:
     string name;
     int age;
 public:
-    Person(const string& name, int age) : name(name), age(age) {}
-    ~Person() { cout << name << " : 소멸자 호출." << endl; }
+    Person25(const string& name, int age) : name(name), age(age) {}
+    ~Person25() { cout << name << " : 소멸자 호출." << endl; }
     void printInfo() const { cout << "name : " << name << ", age : " << age << endl; }
 
     void setName(const string& name) { this->name = name; }
@@ -703,16 +706,16 @@ public:
 };
 
 int _025() {
-    auto ptr1 = make_unique<Person>("p1", 23);
+    auto ptr1 = make_unique<Person25>("p1", 23);
     ptr1->printInfo();
 
-    auto ptr2 = make_unique<Person>("p2", 24);
+    auto ptr2 = make_unique<Person25>("p2", 24);
     ptr2->printInfo();
 
     ptr1.reset();
     ptr2.reset();
 
-    auto ptr3 = make_shared<Person>("p3", 25);
+    auto ptr3 = make_shared<Person25>("p3", 25);
     cout << ptr3.use_count() << endl;
     auto ptr4 = ptr3;
     cout << ptr3.use_count() << endl;
@@ -789,7 +792,7 @@ int _027() {
     return 0;
 }
 #pragma endregion
-#pragma region 028
+#pragma region Study028
 int _028() {
     int arr[5] = { 10, 20, 30, 40, 50 };
     set<int> st(arr, arr + 3);
@@ -819,7 +822,7 @@ int _028() {
     return 0;
 }
 #pragma endregion
-#pragma region 029
+#pragma region Study029
 int _029() {
     // Stack
     int decimal = 123;
