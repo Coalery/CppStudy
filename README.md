@@ -2,6 +2,10 @@
 C++ 공부 내역을 올립니다!
 
 
+# 도움받은 곳
+* [RIPTutorial](https://riptutorial.com/ko/winapi)
+
+
 # Defaults
 기본적인 문법을 공부합니다.
 
