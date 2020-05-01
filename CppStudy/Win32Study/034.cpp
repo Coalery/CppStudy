@@ -1,5 +1,7 @@
 #include <Windows.h>
 
+LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam);
+
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstsance, LPSTR lpCmdLine, int nCmdShow) {
 	WNDCLASSEX wcex;
 	wcex.cbSize = sizeof(WNDCLASSEX);
@@ -15,7 +17,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstsance, LPSTR lpCmdLin
 	wcex.lpszClassName = "basic";
 	wcex.hIconSm = LoadIcon(wcex.hInstance, MAKEINTRESOURCE(IDI_APPLICATION));
 
-	RegisterClassEx(&wcex); // 윈도우 구조체
+	RegisterClassEx(&wcex); // 윈도우 구조체 등록
 
 	HWND hWnd = CreateWindow("basic", "HelloWorld!", WS_OVERLAPPEDWINDOW, CW_USEDEFAULT, CW_USEDEFAULT, 800, 600, nullptr, nullptr, hInstance, nullptr); // 윈도우를 메모리에 올림
 	ShowWindow(hWnd, SW_SHOW); // 윈도우를 보여준다.
@@ -32,5 +34,25 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstsance, LPSTR lpCmdLin
 }
 
 LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam) {
+	PAINTSTRUCT ps;
+	HDC hdc;
+
+	switch (message) {
+	case WM_PAINT:
+		hdc = BeginPaint(hWnd, &ps);
+
+		// Paint
+
+		EndPaint(hWnd, &ps);
+		break;
+	case WM_DESTROY:
+
+		// 메모리 해제
+
+		PostQuitMessage(0);
+		break;
+	default:
+		return DefWindowProc(hWnd, message, wParam, lParam);
+	}
 	return 0;
 }
